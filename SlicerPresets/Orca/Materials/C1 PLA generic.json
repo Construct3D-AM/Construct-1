@@ -182,10 +182,10 @@
         "0"
     ],
     "hot_plate_temp": [
-        "58"
+        "62"
     ],
     "hot_plate_temp_initial_layer": [
-        "64"
+        "68"
     ],
     "inherits": "My Generic PLA",
     "name": "C1 PLA generic",
