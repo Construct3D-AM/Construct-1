@@ -1,15 +1,10 @@
-CURA profiles notes:
-
-The profiles provided are still a work in progress. These will be updated regularly as feedback is provided to continually improve the performance of these profiles.
-It is important to note that these profiles are currently set for PLA material. Please edit them as needed for other materials.
-
-To install these presets, go to the 'preferences' tab at the top of the screen. then procede to the 'Profiles' tab and click 'Import' - please note the downloaded Zip file will need to be extracted first.
-
-======
-== Slicer setup
-======
-
 Notes: This document is temporary until the next update of CURA which hopefully will include our printers, natively.
+
+
+=====
+== Cura Setup Information
+=====
+
 
 === Cura Setup instructions
 You are going to want to add a 'Custom FFF machine'. this can be added under the preferences tab and adding a 'Non-networked printer".
@@ -29,9 +24,9 @@ Z offset Setting:	If everything is good, this isn't needed. However, in the case
 
 
 === Printer tab
-X (Width):		230
-Y (Depth):		260
-Z (Height):		180
+X (Width):		330
+Y (Depth):		370
+Z (Height):		400
 Build plate shape:	Rectangular
 Origin at center:	no
 Heated bed:		Yes
@@ -48,7 +43,7 @@ Number of extruders:	1
 Apply Extruder offsets to Gcode:	no
 
 === Extruder 1 Tab
-Nozzle size:			0.4
+Nozzle size:			0.6
 Compatible material diameter:	1.75
 Nozzle offset X:		0
 Nozzle offset Y:		0
