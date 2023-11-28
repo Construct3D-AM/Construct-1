@@ -3,7 +3,7 @@
 Welcome to the CAD Files Repository hosted by SERAPH TECHNOLOGIES t/a CONSTRUCT3D. This repository contains a collection of CAD, slicer and firmware files intended for educational and personal development purposes. We appreciate your interest and support in our work.
 
 ## Usage Restrictions
-##1. Non-Commercial Use Only
+## 1. Non-Commercial Use Only
 The CAD files provided in this repository are for **personal, non-commercial use only.** These files are not to be used for any commercial purposes, including but not limited to manufacturing, selling, or distribution of the designs or products derived from these files.
 
 ## 2. No Rights Granted
