@@ -41,11 +41,6 @@ M574 X1 S3                                             ; configure sensorless en
 M574 Y2 S3                                             ; configure sensorless endstop for low end on Y
 M574 Z1 S2                                             ; configure Z-probe endstop for low end on Z
 
-; Sensorless Homing Config
-M915 X Y S4 F0 H200  
-;  Ringing Compensation
-M593 P"EI2" F20 ; input shaping
-M572 D0 S0.03 ; pressure advance
 
 ; Z-Probe
 M558 P8 C"zprobe.in" H3 F1200:120 A3 S0.05  T15000                  ; set Z probe type to unmodulated and the dive height + speeds
@@ -79,4 +74,12 @@ T0                                                     ; Sets Tool0 as default
 ;Independent Z leveling
 M671 X-10:340 Y190:190 S10 ; leadscrews locations at left (connected to Z) and right (connected to E1) of X axis
 
+; Sensorless Homing Config
+M915 X Y S4 F0 H200 
 
+====
+==Filament quality tweaks
+==== 
+M593 P"EI2" F20 				; input shaping
+M572 D0 S0.03 					; pressure advance
+M309 S0.02 P0					; material feedforward
