@@ -8,41 +8,13 @@ M201 X500 Y500				; reduce acceleration to avoid false triggering
 
 
 ;== Home Axis X
-
-G91               ; relative positioning
-M913 X40 Y40      ; drop motor current to 30%
-
-G1 H1 X-340 F4400 ; move quickly to X axis endstop for stalldetection
-G1 X10 F6000       ; go back a few mm
-
-M913 X100 Y100    ; raise motor current to 100%
-
-G90               ; absolute positioning
+M98 P"homex.g"
 
 ;== Home Axis Y
-
-G91               ; relative positioning
-
-M913 X40 Y40      ; drop motor current to 30%
-
-G1 H1 Y380 F4400 ; move quickly to Y axis endstop for stall detection 
-G1 Y-10 F6000       ; go back a few mm
-
-M913 X100 Y100    ;raise motor current to 100%
-
-G90               ; absolute positioning
+M98 P"homey.g"
 
 ;== Home Axis X
-
-G91               ; relative positioning
-M913 X40 Y40      ; drop motor current to 30%
-
-G1 H1 X-20 F4400 ; move quickly to X axis endstop for stalldetection
-G1 X10 F6000       ; go back a few mm
-
-M913 X100 Y100    ; raise motor current to 100%
-
-G90               ; absolute positioning
+M98 P"homex.g"
 
 
 ;== Home Axis Z

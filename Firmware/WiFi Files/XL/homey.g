@@ -6,10 +6,13 @@ M201 X500 Y500				; reduce acceleration to avoid false triggering
 
 G91               ; relative positioning
 
+if sensors.endstops[2].triggered == true
+	G92 Z3
+	G1 Z10 F400
 
 M913 X30 Y30      ; drop motor current to 30%
 G1 H1 Y380 F4400 ; move quickly to Y axis endstop for stall detection 
-G1 Y-10 F6000       ; go back a few mm
+G1 Y-80 F6000       ; go back a few mm
 M913 X100 Y100    ;raise motor current to 100%
 
 	
