@@ -82,11 +82,11 @@ M671 X-10:340 Y190:190 S10 ; leadscrews locations at left (connected to Z) and r
 ; Sensorless Homing Config
 M915 X Y S5 F0 H200  
 
-====
-==Filament quality tweaks
-====
+;====
+;==Filament quality tweaks
+;====
 M593 P"EI2" F20 		; input shaping
 M572 D0 S0.03 			; pressure advance
-M309 S0.02 P0			; material feedforward
+M309 S0.022 P0			; material feedforward
 
 
