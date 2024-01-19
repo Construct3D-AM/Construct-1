@@ -1,39 +1,21 @@
 {
-    "auxiliary_fan": "0",
-    "bed_custom_model": "",
-    "bed_custom_texture": "",
+    "bed_custom_model": "C:\\\\Users\\\\metho\\\\Documents\\\\GitHub\\\\Construct-1\\\\SlicerPresets\\\\Orca\\\\XL\\\\Heater bed 410x410 Orca v3.stl",
     "bed_exclude_area": [],
     "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\n\n",
     "change_filament_gcode": "g1 X5 Y350 F8000",
     "cooling_tube_length": "0",
     "cooling_tube_retraction": "0",
-    "default_filament_profile": [],
-    "default_print_profile": "",
     "deretraction_speed": [
         "50"
     ],
     "enable_filament_ramming": "0",
     "extra_loading_move": "0",
-    "extruder_clearance_height_to_lid": "140",
-    "extruder_clearance_height_to_rod": "36",
-    "extruder_clearance_radius": "65",
-    "extruder_colour": [
-        "#FCE94F"
-    ],
-    "extruder_offset": [
-        "0x0"
-    ],
-    "fan_kickstart": "0",
-    "fan_speedup_overhangs": "1",
-    "fan_speedup_time": "0",
-    "from": "",
+    "from": "User",
     "gcode_flavor": "reprapfirmware",
-    "high_current_on_filament_swap": "0",
     "host_type": "duet",
     "inherits": "MyMarlin 0.4 nozzle",
-    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
+    "is_custom_defined": "0",
     "machine_end_gcode": ";Retract the filament\nG92 E1\nG1 E-5 F900\n;Move nozzle fast\nG1 X5 Y369 F15000\n;Move Bed Down\nG1 Z400 F6000\n\n;Set machine to idle\nT-1\nM104 S0\nM104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\nM84 ; disable motors\n",
-    "machine_load_filament_time": "0",
     "machine_max_acceleration_e": [
         "8000"
     ],
@@ -53,9 +35,6 @@
     "machine_max_acceleration_y": [
         "18000"
     ],
-    "machine_max_acceleration_z": [
-        "500"
-    ],
     "machine_max_jerk_e": [
         "6"
     ],
@@ -64,9 +43,6 @@
     ],
     "machine_max_jerk_y": [
         "25"
-    ],
-    "machine_max_jerk_z": [
-        "0.4"
     ],
     "machine_max_speed_e": [
         "100"
@@ -80,101 +56,33 @@
     "machine_max_speed_z": [
         "40"
     ],
-    "machine_min_extruding_rate": [
-        "0"
-    ],
-    "machine_min_travel_rate": [
-        "0"
-    ],
-    "machine_pause_gcode": "M601",
     "machine_start_gcode": "G90 ; use absolute coordinates\nM83 ; extruder relative mode\nM106 S0 ; Turn Fan off\nM204 S[machine_max_acceleration_extruding] T[machine_max_acceleration_retracting]\nM190 S[first_layer_bed_temperature] ; set bed temp\nM109 S160 ; set extruder temp\nG28 ; home all\nG1 Z15 F6000 ; move the printer down 15mm\nG1 Y1.0 Z0.3 F4000 ; move print head up\nM109 S[first_layer_temperature] ; set extruder temp\n\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] T0 ; wait for extruder temp\nM109 S[first_layer_temperature] T1; wait for extruder temp\nM109 S[first_layer_temperature] T2; wait for extruder temp\nM109 S[first_layer_temperature] T3; wait for extruder temp\n;prime the extruder\nG1 X5 Y2 Z0.3 F6000; go to edge of build volume\nG1 X60 E10 F1000 ;gentle purge start\nG1 X110 E25 F1000; heavy purge\nG1 X60;",
-    "machine_unload_filament_time": "0",
     "max_layer_height": [
         "0.6"
-    ],
-    "min_layer_height": [
-        "0.08"
     ],
     "name": "Construct 1 XL",
     "nozzle_diameter": [
         "0.6"
     ],
-    "nozzle_hrc": "0",
     "nozzle_type": "hardened_steel",
-    "nozzle_volume": "0",
     "parking_pos_retraction": "0",
     "print_host": "192.168.1.28",
-    "print_host_webui": "",
     "printable_area": [
         "0x0",
-        "330x0",
-        "330x370",
+        "325x0",
+        "325x370",
         "0x370"
     ],
     "printable_height": "400",
-    "printer_model": "Generic Marlin Printer",
-    "printer_notes": "",
     "printer_settings_id": "Construct 1 XL",
-    "printer_technology": "FFF",
-    "printer_variant": "0.4",
-    "printhost_apikey": "",
-    "printhost_authorization_type": "key",
-    "printhost_cafile": "",
-    "printhost_password": "",
-    "printhost_port": "",
-    "printhost_ssl_ignore_revoke": "0",
-    "printhost_user": "",
-    "purge_in_prime_tower": "1",
-    "retract_before_wipe": [
-        "70%"
-    ],
-    "retract_length_toolchange": [
-        "1"
-    ],
-    "retract_lift_above": [
-        "0"
-    ],
-    "retract_lift_below": [
-        "0"
-    ],
-    "retract_lift_enforce": [
-        "All Surfaces"
-    ],
-    "retract_restart_extra": [
-        "0"
-    ],
-    "retract_restart_extra_toolchange": [
-        "0"
-    ],
-    "retract_when_changing_layer": [
-        "1"
-    ],
     "retraction_length": [
         "0.7"
-    ],
-    "retraction_minimum_travel": [
-        "1"
     ],
     "retraction_speed": [
         "65"
     ],
-    "scan_first_layer": "0",
-    "silent_mode": "0",
-    "single_extruder_multi_material": "1",
-    "template_custom_gcode": "",
-    "thumbnails": [
-        "300x300"
-    ],
-    "upward_compatible_machine": [],
-    "use_firmware_retraction": "0",
-    "use_relative_e_distances": "1",
+    "thumbnails_format": "QOI",
     "version": "1.6.1.0",
-    "wipe": [
-        "0"
-    ],
-    "wipe_distance": [
-        "1"
-    ],
     "z_hop": [
         "0.2"
     ],

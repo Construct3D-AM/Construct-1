@@ -1,0 +1,58 @@
+{
+    "filament_cooling_final_speed": [
+        "40"
+    ],
+    "filament_cooling_initial_speed": [
+        "4"
+    ],
+    "filament_cooling_moves": [
+        "0"
+    ],
+    "filament_load_time": [
+        "80"
+    ],
+    "filament_max_volumetric_speed": [
+        "30"
+    ],
+    "filament_minimal_purge_on_wipe_tower": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "C1 PLA generic"
+    ],
+    "filament_toolchange_delay": [
+        "2"
+    ],
+    "filament_unload_time": [
+        "30"
+    ],
+    "filament_unloading_speed": [
+        "10"
+    ],
+    "filament_unloading_speed_start": [
+        "70"
+    ],
+    "filament_z_hop": [
+        "0"
+    ],
+    "filament_z_hop_types": [
+        "Auto Lift"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "62"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "68"
+    ],
+    "inherits": "My Generic PLA",
+    "is_custom_defined": "0",
+    "name": "C1 PLA generic",
+    "nozzle_temperature_range_high": [
+        "235"
+    ],
+    "slow_down_layer_time": [
+        "3"
+    ],
+    "version": "1.6.1.0"
+}
