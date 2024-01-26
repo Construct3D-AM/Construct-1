@@ -1,0 +1,18 @@
+For creating your own C1 and C1XL Print profiles, here is some advice for acheving best quality.
+
+[TODO Add link to data source and reference images for quality vs agressiveness - find suitible host site for 105 high rez analysis photos]
+
+1) When printing at 100mm/s vs 300mm/s, you can be much more agressive with the jerk and acceleration settings for 100mm/s.
+2) For the C1 do not excede 25 mm/s Jerk values
+3) For the C1XL do not excede 20mm/s Jerk values
+4) For best quality accelerations, a value of 2800mm/s (C1) and 2400mm/s (XL)
+5) For good quality accelerations, a value of 3600mm/s (C1) and 3400mm/s (XL)
+6) For acceptable quality accelerations, a value of 4400mm/s (C1) and 4000mm/s (XL)
+7) If you are experiencing noticable ringing on surfaces when printing at slow speeds (~60mm/s) this is an indicator that your belts are too tight. Release the tention by a single tooth, and this should resolve the artefact
+8) Motor resonance speeds (commonly cause VFAs) are worse between 70mm/s and 120mm/s. This is not to say dont print at these speeds, but this will be more likely to see VFAs in print surfaces on glossy materials or if the belts are over tentioned
+9) It is common for your home/factory intranet IP addresses to change suddenly at the whims of the router, this can cause a previously known IP for a printer to suddenly change, this may break any remote print send functionality untill it is identified and the new IP is set
+10) The Vanadium nozzles are perfect for printing even the most abrasive materials, however they do cost between 10-20% flow headroom. This can be compensated by raising the temperature of the printed material by 8°C for the same flow rate
+11) Construct 1 and Construct 1XL run the RepRapFirmware Flavour of G-Code
+12) If you want to store images inside the GCode, the WebUI can show both QOI and PNG formats, The touch screen however can onyl show QOI - Please see Docs.Duet3d.com for the specifics on QOI image formatting
+
+Have fun and happy printing.
