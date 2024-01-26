@@ -26,7 +26,7 @@
     "outer_wall_acceleration": "3200",
     "outer_wall_jerk": "8",
     "outer_wall_line_width": "0.42",
-    "outer_wall_speed": "140",
+    "outer_wall_speed": "160",
     "overhang_2_4_speed": "60",
     "overhang_3_4_speed": "40",
     "overhang_4_4_speed": "15",
