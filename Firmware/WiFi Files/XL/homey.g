@@ -12,7 +12,7 @@ if sensors.endstops[2].triggered == true
 
 M913 X30 Y30      ; drop motor current to 30%
 G1 H1 Y380 F4400 ; move quickly to Y axis endstop for stall detection 
-G1 Y-80 F6000       ; go back a few mm
+G1 Y-75 F6000       ; go back a few mm
 M913 X100 Y100    ;raise motor current to 100%
 
 	

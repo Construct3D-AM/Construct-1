@@ -7,14 +7,12 @@
 M201 X500 Y500				; reduce acceleration to avoid false triggering
 
 
-;== Home Axis X
-M98 P"homex.g"
-
 ;== Home Axis Y
 M98 P"homey.g"
 
 ;== Home Axis X
 M98 P"homex.g"
+
 
 
 ;== Home Axis Z
