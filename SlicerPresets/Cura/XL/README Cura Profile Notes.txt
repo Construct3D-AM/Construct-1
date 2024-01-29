@@ -24,7 +24,7 @@ Z offset Setting:	If everything is good, this isn't needed. However, in the case
 
 
 === Printer tab
-X (Width):		330
+X (Width):		325
 Y (Depth):		370
 Z (Height):		400
 Build plate shape:	Rectangular
