@@ -14,6 +14,8 @@ if sensors.endstops[2].triggered == true
 
 M913 X40 Y40      ; drop motor current to 30%
 G1 H1 X-240 F4400 ; move quickly to X axis endstop for stalldetection
+G1 X3 F6000       ; go back a few mm 
+G92 X0			; Set this as new XO point to allow for sensorless homing innacuracies
 G1 X15 F6000       ; go back a few mm
 M913 X100 Y100      ; drop motor current to 1000%
 
