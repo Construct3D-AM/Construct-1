@@ -78,9 +78,9 @@ Cooling fan Number:		0
 	G92 E1
 	G1 E-5 F900
 	;Move nozzle fast
-	G1 X5 Y258 F15000
+	G1 X5 Y370 F15000
 	;Move Bed Down
-	G1 Z180 F6000
+	G1 Z400 F6000
 
 	;Set machine to idle
 	M104 S0
