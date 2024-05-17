@@ -53,35 +53,35 @@ Cooling fan Number:		0
 === Start G-code
 ; Copy paste the following code into the Start G-Code text box
 
-	M106 S0 ; Turn Fan off
-	M190 S{material_bed_temperature_layer_0} ;Start heating bed
-	M109 S150
-	G28; home
-	G1 Z15 F6000 ; move the printer down 15mm
-	G1 Y2 F3000
-	M104 S{material_print_temperature_layer_0} ;Start heating extruder
-	M109 S{material_print_temperature_layer_0} ;Wait for extruder to reach temp before proceeding
+M106 S0 ; Turn Fan off
+M190 S{material_bed_temperature_layer_0} ;Start heating bed
+M109 S150
+G28; home
+G1 Z15 F6000 ; move the printer down 15mm
+G1 Y2 F3000
+M104 S{material_print_temperature_layer_0} ;Start heating extruder
+M109 S{material_print_temperature_layer_0} ;Wait for extruder to reach temp before proceeding
 
-	;prime the extruder
-	G1 X5 Y2 Z0.3 F6000; go to edge of build volume
-	G1 X60 E10 F1000 ;gentle purge start
-	G1 X110 E25 F1000; heavy purge
-	G1 X60;
-	G92 E0
+;prime the extruder
+G1 X5 Y2 Z0.3 F6000; go to edge of build volume
+G1 X60 E10 F1000 ;gentle purge start
+G1 X110 E25 F1000; heavy purge
+G1 X60;
+G92 E0
 
 
 === End G-code
 ; Copy paste the following code into the End G-Code text box
 
 
-	;Retract the filament
-	G92 E1
-	G1 E-5 F900
-	;Move nozzle fast
-	G1 X5 Y370 F15000
-	;Move Bed Down
-	G1 Z400 F6000
+;Retract the filament
+G92 E1
+G1 E-5 F900
+;Move nozzle fast
+G1 X5 Y370 F15000
+;Move Bed Down
+G1 Z400 F6000
 
-	;Set machine to idle
-	M104 S0
-	M140 S0
+;Set machine to idle
+M104 S0
+M140 S0
