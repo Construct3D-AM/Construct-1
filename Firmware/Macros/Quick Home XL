@@ -22,7 +22,7 @@ G1 X160 Y230 F6000 ; go to first probe point in middle of bed
 G30
 G1 Z35
 
-M201 X18000.00 Y18000.00 Z300.00 E4000.00    
+M201 X10000.00 Y10000.00 Z300.00 E4000.00    
 ; Uncomment the following lines to lift Z after probing
 ;G91                    ; relative positioning
 ;G1 Z10 F100            ; lift Z relative to current position
