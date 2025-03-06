@@ -41,7 +41,7 @@ M574 Z1 S2                                             ; configure Z-probe endst
 
 ; Z-Probe
 M558 P8 C"zprobe.in" H2 F1000:100 A3 S0.05  T15000                  ; set Z probe type to unmodulated and the dive height + speeds
-G31 P800 X0 Y-21 Z0.67; set Z probe trigger value, offset and trigger height
+G31 P800 X12 Y-26 Z0.67; set Z probe trigger value, offset and trigger height
 M557 P5 X10:200 Y20:235                             ; define mesh grid
 
 
@@ -77,6 +77,6 @@ M915 X Y S3 F0 H200
 ;====
 ;==Filament quality tweaks
 ;====
-M593 P"EI2" F21 			; input shaping
-M572 D0 S0.03 				; pressure advance
+M593 P"EI2" F45 			; input shaping
+M572 D0 S0.012 				; pressure advance
 M309 S0.022 P0				; material feedforward

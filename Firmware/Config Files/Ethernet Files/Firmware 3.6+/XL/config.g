@@ -1,4 +1,4 @@
-; Configuration file for Duet Ethernet (firmware version 3.4.5)
+; Configuration file for Duet Ethernet (firmware version 3.6)
 ; executed by the firmware on start-up
 ;
 ; Thank you for buying our XL printer, it honnestly means a lot to us, happy printing.
@@ -27,7 +27,7 @@ M92 X80.00 Y80.00 Z800.00 E397                   ; set steps per mm
 M566 X2000.00 Y2000.00 Z100.00 E500.00                    ; set maximum instantaneous speed changes (mm/min)
 M203 X30000.00 Y30000.00 Z1000.00 E6000.00                ; set maximum speeds (mm/min)
 M201 X18000.00 Y18000.00 Z300.00 E6000.00                    ; set accelerations (mm/s^2)
-M906 X1850 Y1850 Z900 E1200 I30                          ; set motor currents (mA) and motor idle factor in per cent
+M906 X1750 Y1750 Z900 E1200 I30                          ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                                ; Set idle timeout
 
 
@@ -44,7 +44,7 @@ M574 Z1 S2                                             ; configure Z-probe endst
 
 ; Z-Probe
 M558 P8 C"zprobe.in" H3 F1200:120 A3 S0.05  T15000                  ; set Z probe type to unmodulated and the dive height + speeds
-G31 P800 X0 Y-21 Z1.56; set Z probe trigger value, offset and trigger height
+G31 P800 X12 Y-26 Z1.56; set Z probe trigger value, offset and trigger height
 M557 P7 X10:320 Y20:330                             ; define mesh grid
 
 
@@ -80,6 +80,6 @@ M915 X Y S4 F0 H200
 ;====
 ;==Filament quality tweaks
 ;==== 
-M593 P"EI2" F20 				; input shaping
-M572 D0 S0.03 					; pressure advance
+M593 P"EI2" F45 				; input shaping
+M572 D0 S0.012 					; pressure advance
 M309 S0.022 P0					; material feedforward
