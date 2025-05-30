@@ -21,10 +21,10 @@ M569 P3 S1                                             ; physical drive 3 goes f
 M584 X0 Y1 Z2:4 E3                                       ; set drive mapping
 M350 X16 Y16 Z16 E16 I1                                ; configure microstepping with interpolation
 M92 X80.00 Y80.00 Z800.00 E397                   ; set steps per mm
-M566 X2000.00 Y2000.00 Z100.00 E500.00                    ; set maximum instantaneous speed changes (mm/min)
+M566 X1200.00 Y1200.00 Z100.00 E500.00                    ; set maximum instantaneous speed changes (mm/min)
 M203 X30000.00 Y30000.00 Z1000.00 E6000.00                ; set maximum speeds (mm/min)
 M201 X18000.00 Y18000.00 Z300.00 E6000.00                    ; set accelerations (mm/s^2)
-M906 X1850 Y1850 Z900 E1200 I30                          ; set motor currents (mA) and motor idle factor in per cent
+M906 X1700 Y1700 Z900 E1200 I30                          ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                                ; Set idle timeout
 
 
