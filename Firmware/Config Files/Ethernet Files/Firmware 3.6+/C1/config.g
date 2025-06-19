@@ -42,7 +42,7 @@ M574 Z1 S2                                             ; configure Z-probe endst
 ; Z-Probe
 M558 P8 C"zprobe.in" H2 F1000:100 A3 S0.05  T15000                  ; set Z probe type to unmodulated and the dive height + speeds
 G31 P800 X12 Y-26 Z0.67; set Z probe trigger value, offset and trigger height
-M557 P5 X10:200 Y15:230                             ; define mesh grid
+M557 P5 X15:220 Y15:230                             ; define mesh grid
 
 
 ; Heaters
