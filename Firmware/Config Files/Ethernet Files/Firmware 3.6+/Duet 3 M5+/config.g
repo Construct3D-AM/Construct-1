@@ -12,7 +12,7 @@
 M575 P1 S1 B57600                                      ; enable support for PanelDue
 G90                                                    ; send absolute coordinates...
 M83                                                    ; ...but relative extruder moves
-M550 P"Construct 1 XL V13"                                            ; set printer name
+M550 P"Construct 1 XL"                                            ; set printer name
 M669 K1                                                ; select CoreXY mode
 
 
