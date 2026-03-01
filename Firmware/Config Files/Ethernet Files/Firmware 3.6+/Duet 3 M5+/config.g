@@ -56,17 +56,12 @@ M208 X328 Y360 Z400 S0                                 ; set axis maxima
 ; Endstops
 M574 X1 S3                                             ; configure sensorless endstop for low end on X
 M574 Y2 S3                                             ; configure sensorless endstop for high end on Y
-;M574 Z1 S1 P"121.io0.in"                                            ; configure z-probe endstop active high
+M574 Z1 S1 P"121.io0.in"                                            ; configure z-probe endstop active high
 
 ; P+F Z-Probe
-;M558 K0 P8 C"!io6.in" H3:2 F600:100 A3 T12000         ; disable Z probe but set dive height, probe speed and travel speed
-;M557 X15:300 Y30:330 P7                                ; define mesh grid
-;G31 K0 P800 X0 Y-21 Z1.88                                 ; set Z probe trigger value, offset and trigger height
-
-;Peizo Probe
-M558 K0 P8 C"!io1.in" R1 F1200 A15 H8 S0.04
-M557 X5:310 Y10:360 P11
-G31 X0 Y0 Z-0.02 K0
+M558 K0 P8 C"io6.in" H3:2 F600:100 A3 T12000         ; disable Z probe but set dive height, probe speed and travel speed
+M557 X15:300 Y30:330 P7                                ; define mesh grid
+G31 K0 P800 X12 Y-26 Z1.88                                 ; set Z probe trigger value, offset and trigger height
 
 ;Independent Z leveling
 M671 X-10:340 Y190:190 S10                             ; leadscrews locations at left (connected to Z) and right (connected to E1) of X axis
@@ -105,5 +100,4 @@ T0
 M593 P"EI2" F45 S0.01                                  ; input shaping
 M572 D0 S0.012                                         ; pressure advance
 M309 S0.022 P0                                         ; material feedforward
-
 
