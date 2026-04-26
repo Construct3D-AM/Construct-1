@@ -17,7 +17,7 @@ M669 K1                                                               ; select C
 
 ;███████████████████████████████████████████████████████████████████████████████████
 ;Tertiary
-M950 E0 C"led" T1 U20 Q3200000   ;set strips and Q=Signal frequency
+M950 E0 C"led" T1 U20 Q3000000   ;set strips and Q=Signal frequency
 M150 E0 R40 U40 B255 P255 S20 ;Auto set to llight blue on startup
 
 ; Wait a moment for the CAN expansion boards to start
@@ -31,13 +31,13 @@ G4 S5
 ; D2    D1    D0
 ; Zl    N/A   Zr
 
-M569 P0.3 S0                                                          ; XYl motor physical drive goes forwards
-M569 P0.5 S0                                                          ; XYr motor physical drive goes forwards
+M569 P0.3 S1                                                          ; XYl motor physical drive goes forwards
+M569 P0.5 S1                                                          ; XYr motor physical drive goes forwards
 M569 P0.2 S1                                                          ; zl motor physical drive goes forwards
 M569 P0.0 S1                                                          ; zr motor physical drive goes forwards
 M569 P121.0 S0                                                        ; ToolBoard Extruder motor physical drive goes backwards
 
-M584 X0.3 Y0.5 Z0.2:0.0 E121.0                                        ; set drive mapping
+M584 X0.2 Y0.5 Z0.0:0.3 E121.0                                        ; set drive mapping
 M350 X32 Y32 Z16 I1                                                   ; configure microstepping with interpolation
 M350 E16 I1
 M92 X160 Y160 Z800 E410                                              ;Set steps per/mm
